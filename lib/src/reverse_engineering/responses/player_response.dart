@@ -38,7 +38,7 @@ class PlayerResponse {
   DateTime? get videoPublishDate => root
       .get('microformat')
       ?.get('playerMicroformatRenderer')
-      ?.getT<String>('publishDate')
+      ?.getT<String>('publishedAt')
       ?.parseDateTime();
 
   ///
